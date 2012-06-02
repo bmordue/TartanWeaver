@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, TartanWeaverActivity!</string>
+	<string name="app_name">Tartan Weaver</string>
+	<string name="threadcount_label_text">Thread count: </string>
+	<string name="default_threadcount">R20 K20 Y2 K2 W2 K2 G/16</string>
+	<string name="button_text">Draw</string>
+	<string name="save_directory">Pictures</string>
+	<string name="save_filename">Tartan</string>
+	<string name="saving">Saving...</string>
+	<string name="image_saved">Image saved to Pictures.</string>
+	<string name="image_not_saved">Image not saved.</string>
+	<string name="menu_about">About...</string>
+	<string name="dialog_about">About Tartan Weaver</string>
+	<string name="about_message">Enter the thread count of a tartan in the text box then click draw to display the pattern.</string>
+	<string name="save_menu_label">Save to Pictures</string>
+	<string name="wallpaper_menu_label">Set as wallpaper</string>
+	<string name="save_big_menu_label">Save big bitmap</string>
+	<string name="share_menu_label">Share your tartan</string>
+	<string name="share_chooser_label">Share your tartan using:</string>
+	
+	    <string name="colour_prompt">Choose a colour</string>
+    <string-array name="colours_array">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+    </string-array>
+	
+</resources>

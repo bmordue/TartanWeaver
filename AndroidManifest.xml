@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.scotapps.tartanweaver" android:versionCode="3"
+	android:versionName="1.2">
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<activity android:name=".TartanWeaverActivity" android:label="@string/app_name"
+		android:configChanges="orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<meta-data android:value="1dff0d25ccb041a5826b2e99a00ca4c8"
+				android:name="ADWHIRL_KEY" />
+				
+		</activity>
+		<!-- The application's publisher ID assigned by AdMob -->
+		<meta-data android:value="a14d41c6026d223" android:name="ADMOB_PUBLISHER_ID" />
+
+		<!-- AdMobActivity definition -->
+		<activity android:name="com.admob.android.ads.AdMobActivity"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:configChanges="orientation|keyboard|keyboardHidden" />
+		<!-- Track Market installs -->
+		<receiver android:name="com.admob.android.ads.analytics.InstallReceiver"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="com.android.vending.INSTALL_REFERRER" />
+			</intent-filter>
+		</receiver>
+		<meta-data android:value="true" android:name="ADMOB_ALLOW_LOCATION_FOR_ADS" />
+
+<!--  MillenialMedia activity registration -->
+	 <activity android:name="com.millennialmedia.android.MMAdViewOverlayActivity" 
+       		android:theme="@android:style/Theme.Translucent.NoTitleBar">
+ 	</activity>
+<!-- ********** THIS IS NEW FOR THE VERSION MillennialMedia 3.6 SDK ************************* -->	
+	 <activity android:name="com.millennialmedia.android.VideoPlayer" 
+                    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                    android:configChanges="keyboardHidden|orientation|keyboard" >
+        </activity>
+
+
+	</application>
+	<uses-sdk android:minSdkVersion="3" />
+
+	<!--  For AdWhirl -->
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<!--  for Millenial Media -->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+	<uses-permission android:name="android.permission.SET_WALLPAPER" /> 
+
+</manifest> 

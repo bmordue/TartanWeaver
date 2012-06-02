@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<colourDictionary>
+<colour name="Light Red"	code="LR" 	rgb="#ffb20000" />
+<colour name="Red" 			code="R" 	rgb="#ff820000" />
+<colour name="Dark Red"		code="DR" 	rgb="#ff420000" />
+<colour name="Light Green"	code="LG" 	rgb="#ff00b200" />
+<colour name="Green" 		code="G" 	rgb="#ff008200" />
+<colour name="Dark Green"	code="DG" 	rgb="#ff004200" />
+<colour name="Light Blue"	code="LB" 	rgb="#ff0000b2" />
+<colour name="Blue" 		code="B" 	rgb="#ff000082" />
+<colour name="Dark Blue"	code="DB" 	rgb="#ff000042" />
+<colour name="Black" 		code="K" 	rgb="#ff101010" />
+<colour name="Brown" 		code="T" 	rgb="#ffb5b5b5" />
+<colour name="Grey" 		code="N" 	rgb="#ffb5b5b5" />
+<colour name="Yellow"		code="Y" 	rgb="#ffffff00" />
+<colour name="White" 		code="W" 	rgb="#ffdddddd" />
+</colourDictionary>

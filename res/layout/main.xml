@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.scotapps.tartanweaver"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:id="@+id/anchor">
+
+
+	<ImageView android:background="#b5b5b5" android:id="@+id/tartan_image"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		 />
+
+
+	<SlidingDrawer android:id="@+id/drawer"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:handle="@+id/handle" android:content="@+id/content"
+		android:bottomOffset="10dip">
+
+		<TextView android:id="@id/handle" android:layout_width="88dip"
+			android:layout_height="44dip" android:background="#b5b5b5"
+			android:text="Design" />
+
+		<RelativeLayout android:id="@id/content"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:background="#b5b5b5"
+			android:tag="relativelytagged">
+
+
+			<Button android:id="@+id/draw_button" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/button_text"
+				
+				android:layout_alignParentRight="true" />
+
+			<EditText android:text="@string/default_threadcount"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:id="@+id/threadcount_edit" android:layout_toLeftOf="@+id/draw_button"
+				android:layout_alignTop="@id/draw_button"
+				android:layout_alignBottom="@id/draw_button" />
+
+			<Button android:id="@+id/expand_sett" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="+"
+				android:layout_alignParentBottom="true"  />
+
+
+			<ScrollView android:id="@+id/scrollview"
+			android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_below="@id/threadcount_edit"
+				android:layout_above="@id/expand_sett">
+				
+				<RelativeLayout android:id="@+id/scrollcontainer" android:layout_width="fill_parent"
+				android:layout_height="fill_parent" />
+				
+				</ScrollView>
+
+
+		</RelativeLayout>
+
+	</SlidingDrawer>
+
+</RelativeLayout>
+
+	
+
+	

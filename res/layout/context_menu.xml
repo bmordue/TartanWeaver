@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/save_file"
+        android:title="@string/save_menu_label" />
+   <item android:id="@+id/set_wallpaper"
+        android:title="@string/wallpaper_menu_label" />
+   <item android:id="@+id/share_tartan"
+        android:title="@string/share_menu_label" />
+</menu>
